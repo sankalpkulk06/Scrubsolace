@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 100%;
+        height: 100vh;
+        background-image: url("luke-chesser-IGtutkXikuc-unsplash.jpg");
+        background-size: cover;
+        }
+        .content-area {
+    border: solid black 1px;
+    /* padding: 0;
+    margin: 0; */
+    width: 507px;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(241, 238, 238);
+    border-radius:  0 0 15px 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.banner-area {
+    margin-top: 10%;
+}
+label {
+    font-size: x-large;
+    font-weight: 500;
+}
+button {
+    margin-left: 15%;
+    margin-top: 3%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.navbar {
+    font-size: xx-large;
+    font-weight: 600;
+    margin-left: 42%;
+    color: aliceblue;
+}
+.nav {
+
+   font-size: x-large;
+    font-weight: 500;
+    display: flex;
+}
+input {
+    font-size: larger;
+}
+.title {
+    width: 500px;
+    background-color: rgb(32, 32, 32, 0.8);
+    margin: auto;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px 5px;
+    border-radius: 15px 15px 0 0;
+}
+
+    </style>
+</head>
+<body>
+    
+    <form action="/login"method="POST">
+    
+        <div class="banner-area">
+            <h1 class="title">Scrubsolace Login</h1>
+            <div class="nav">{{>navbar}}</div>
+            <div class="content-area">    
+                <label for=""class="email">Email ID: </label>
+                <input type="email"name="email"><br><br><br>
+                <label for=""class="password">Password: </label>
+                <input type="password"name="password"><br>
+                <button type="submit">Log In</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

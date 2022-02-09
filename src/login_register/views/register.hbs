@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+
+    <style>
+        body {
+            width: 100%;
+        height: 100vh;
+        background-image: url("luke-chesser-IGtutkXikuc-unsplash.jpg");
+        background-size: cover;
+        }
+        .title {
+    width: 500px;
+    background-color: rgb(32, 32, 32, 0.8);
+    margin: auto;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px 5px;
+    border-radius: 15px 15px 0 0;
+}
+#registration {
+    border: solid black 1px;
+    /* padding: 0;
+    margin: 0; */
+    width: 507px;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(241, 238, 238);
+    border-radius:  0 0 15px 15px;
+    padding-bottom: 20px;
+}
+#form-details {
+    background-color: rgb(241, 238, 238);
+    display: inline-block; 
+    /* border-radius: 2%; */
+    padding: 1em 0.5em;
+    width: 40%;
+    text-align: center;
+    color: black;
+} 
+ .banner-area {
+        
+        margin-top: 50px;
+    }
+    .nav {
+    margin-left: 43%;
+   font-size: x-large;
+    font-weight: 500;
+    display: flex;
+}
+
+    </style>
+</head>
+<body>
+    <div class="banner-area">
+    <h1 class="title">Registration Form</h1>
+    <div class="nav">{{>navbar}}</div>
+    <form action="/register"method="POST">
+        <div class = "form" id="registration">
+            <label for="" class="first" id="form-details">First Name: </label>
+            <input type="text" name="firstname"><br>
+            <label for="" class="last" id="form-details">Last Name:</label>
+            <input type="text"name="lastname"><br>
+            <label for=""class="email" id="form-details">Email ID:</label>
+            <input type="email"name="email"><br>
+            <label for=""class="phone" id="form-details">Phone Number</label>
+            <input type="text"name="phone"><br>
+            <label for=""class="gender" id="form-details">Gender:</label>
+            <input type="radio" name="gender"><span>Male</span>
+            <input type="radio"name="gender"><span>Female</span><br>
+            <label for=""class="password" id="form-details">Password:</label>
+            <input type="password" name="password" placeholder="Enter password"><br>
+            <label for=""class="confirm" id="form-details">Confirm Password:</label>
+            <input type="password"name="confirmPassword"><br>
+            <button type="submit">Register</button>
+        </div>
+        
+    </form>
+    </div>
+</body>
+</html>
